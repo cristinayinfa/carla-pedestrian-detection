@@ -5,7 +5,7 @@ YoloV3 Tensorflow implementation forked from:
  https://github.com/YunYang1994/tensorflow-yolov3 (branch: [dependabot/pip/docs/tensorflow-gpu-1.15.2](https://github.com/YunYang1994/tensorflow-yolov3/tree/dependabot/pip/docs/tensorflow-gpu-1.15.2))
  
  
-Steps:
+## Steps:
 
 1. Get this github repository in CARLA\WindowsNoEditor\PythonAPI\examples.
   It should look like this:
@@ -21,7 +21,7 @@ Steps:
 │   │   │   ├── carla
 │   │   │   ├── util
 │   │   │   ├── examples
-│   │   │   │ 	├── yolov3_object_detection.py
+│   │   │   │ 	├── carla-pedestrian.py
 │   │   │   │ 	├── tensorflow_yolov3    
 │   │   │   │ 	│   │  	├── carla
 │   │   │   │ 	│   │	│   ├── utils.py            
@@ -43,11 +43,15 @@ Steps:
 	```
   
 4. Run spawn actor python file for  adding pedestrians or vehicles.
-	> python spawn_npc.py
+
+	```python spawn_npc.py```
 
 5. Run pedestrian detection code
-	> python carla-pedestrian.py
+
+ 	```python carla-pedestrian.py```
 
 
 You should see two windows like this:
-( ./image.png)
+![Demo image](./image.png)
+
+Control the car in the pygame window with WASD keys (this will be laggy, please be patient)
